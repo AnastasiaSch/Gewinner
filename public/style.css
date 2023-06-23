@@ -1,0 +1,16 @@
+body {
+    background-color: #e6e5e5;
+    font-family: sans-serif;
+}
+
+h1  {
+    text-align: center;
+
+}
+h1, h2 {
+    color: #00a2aa;
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "nobelpreistraeger",
+    "version": "0.0.1",
+    "description": "the best programm",
+    "private": true,
+    "dependencies": {
+        "express": "^4.17.1",
+        "ejs": "^3.1.5"
+    }
+}

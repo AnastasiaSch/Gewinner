@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>winners</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/style.css" 
+        media="screen" />
+</head>
+
+<body>
+  
+  <h2>Fach: <%= subject %></h2> 
+
+  <% if (subject.toLowerCase() == 'chemistry') { %>
+    <% objects.forEach( (object, i) => { %>
+      <% if (objects[i].subject == 'Chemistry') { %>
+        <ul>
+            <li><em>Gewinner:</em> <strong><%= objects[i].winner %></strong>. <em>Jahr der Verlehung:</em> <strong><%= objects[i].yr %></strong></li>
+        </ul>
+      <% } %>
+    <% }); %>
+  <% } %>       
+
+  <% if (subject.toLowerCase() == 'literature') { %>
+    <% objects.forEach( (object, i) => { %>
+      <% if (objects[i].subject == 'Literature') { %>
+        <ul>
+            <li><em>Gewinner:</em> <strong><%= objects[i].winner %></strong>. <em>Jahr der Verlehung:</em> <strong><%= objects[i].yr %></strong></li>
+        </ul>
+      <% } %>
+    <% }); %>
+  <% } %>
+
+  <% if (subject.toLowerCase() == 'medicine') { %>
+    <% objects.forEach( (object, i) => { %>
+      <% if (objects[i].subject == 'Medicine') { %>
+        <ul>
+            <li><em>Gewinner:</em> <strong><%= objects[i].winner %></strong>. <em>Jahr der Verlehung:</em> <strong><%= objects[i].yr %></strong></li>
+        </ul>
+      <% } %>
+    <% }); %>
+  <% } %>
+
+  <% if (subject.toLowerCase() == 'peace') { %>
+    <% objects.forEach( (object, i) => { %>
+      <% if (objects[i].subject == 'Peace') { %>
+        <ul>
+            <li><em>Gewinner:</em> <strong><%= objects[i].winner %></strong>. <em>Jahr der Verlehung:</em> <strong><%= objects[i].yr %></strong></li>
+        </ul>
+      <% } %>
+    <% }); %>
+  <% } %>
+
+  <% if (subject.toLowerCase() == 'physics') { %>
+    <% objects.forEach( (object, i) => { %>
+      <% if (objects[i].subject == 'Physics') { %>
+        <ul>
+            <li><em>Gewinner:</em> <strong><%= objects[i].winner %></strong>. <em>Jahr der Verlehung:</em> <strong><%= objects[i].yr %></strong></li>
+        </ul>
+      <% } %>
+    <% }); %>
+  <% } %>
+
+  <% if ((subject !== 'Chemistry') && (subject !== 'Literature') && (subject !== 'Medicine') && (subject !== 'Peace') && (subject !== 'Physics')) { %>
+     <p>Error: Unbekanntes Fach!</p>
+  <% } %>
+
+</body>
+
+</html>
+
